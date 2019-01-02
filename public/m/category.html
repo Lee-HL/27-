@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 添加完整事件 解决缩放 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入站点图标 -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- 1. 引入MUi的CSS -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 2. 引入fontAwesome 字体图标库的包 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 3. 引入自己的主页的less 注意 rel="stylesheet/less"-->
+    <link rel="stylesheet/less" href="less/category.less">
+    <!-- 4. 引入less.js编译器文件 用来编译less代码成css -->
+    <script src="lib/less/less.js"></script>
+    <!-- 5. 引入rem屏幕适配的js代码 -->
+    <script src="js/rem.js"></script>
+    <title>乐淘移动端分类页面</title>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="#" class="left fa fa-arrow-left"></a>
+        <form action="#" class="center">
+            <input type="search" placeholder="请输入要搜素的内容">
+        </form>
+        <a href="search.html" class="right fa fa-search"></a>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+        <div class="category-left">
+            <!-- 区域滚动父容器 -->
+            <div class="mui-scroll-wrapper">
+                <!-- 区域滚动子容器 -->
+                <div class="mui-scroll">
+                    <!-- ul真实要滚动的内容  放到mui-scroll容器里面 -->
+                    <!-- 这里放置真实显示的DOM内容 -->
+                    <ul>
+                        <li class="active"><a href="#">运动馆</a></li>
+                        <li><a href="#">女士馆</a></li>
+                        <li><a href="#">男士馆</a>
+                        <li>
+                        <li><a href="#">生活馆</a></li>
+                        <li><a href="#">单身馆</a></li>
+                        <li><a href="#">保健馆</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="category-right">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- mui-row是真实滚动内容 放到mui-scroll容器里面 -->
+                    <!--这里放置真实显示的DOM内容-->
+                    <div class="mui-row">
+                        <!-- .mui-col-xs-4*6>a[href="#"]>img[src="images/brand$.png"]+p{耐克$} -->
+                        <div class="mui-col-xs-4">
+                            <a href="#">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克1</p>
+                            </a>
+                        </div>
+                        <div class="mui-col-xs-4">
+                            <a href="#">
+                                <img src="images/brand2.png" alt="">
+                                <p>耐克2</p>
+                            </a>
+                        </div>
+                        <div class="mui-col-xs-4">
+                            <a href="#">
+                                <img src="images/brand3.png" alt="">
+                                <p>耐克3</p>
+                            </a>
+                        </div>
+                        <div class="mui-col-xs-4">
+                            <a href="#">
+                                <img src="images/brand4.png" alt="">
+                                <p>耐克4</p>
+                            </a>
+                        </div>
+                        <div class="mui-col-xs-4">
+                            <a href="#">
+                                <img src="images/brand5.png" alt="">
+                                <p>耐克5</p>
+                            </a>
+                        </div>
+                        <div class="mui-col-xs-4">
+                            <a href="#">
+                                <img src="images/brand6.png" alt="">
+                                <p>耐克6</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <!-- .mui-col-xs-3*4>a[href="#"]>i.fa.fa-home+span{首页} -->
+            <div class="mui-col-xs-3"><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+            <div class="mui-col-xs-3"><a href="category.html"><i class="fa fa-bars"></i><span>分类</span></a></div>
+            <div class="mui-col-xs-3"><a href="cart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+            <div class="mui-col-xs-3"><a href="user.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+        </div>
+    </footer>
+
+    <!-- 1.引入MUI的js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 2.引入zepto 获取元素 发送ajax请求 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 3.引入模板引擎的js 注意引入template-web.js -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 4.引入自己的js -->
+    <script src="js/category.js"></script>
+</body>
+
+</html>

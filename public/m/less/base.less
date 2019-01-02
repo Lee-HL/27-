@@ -1,0 +1,104 @@
+/* 乐淘主题色 */
+@main-color: #006699;
+
+/* MUI 初始化里面没有这个图片对齐方式的 初始化样式 再单独加 */
+img {
+    vertical-align: middle;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+}
+
+body {
+    max-width: 750px;
+    margin: 0px auto;
+    /* 把 MUI默认字体17变成 14px */
+    font-size: .14rem;
+    /* 如果觉得文字有点偏上 行高继承body的默认21px行高 所有有点偏 行高也变成14px */
+    line-height: .14rem;
+}
+
+/* 给body设置padding 让main被挤到中间来 */
+body {
+    padding: .45rem 0;
+    /* 给body设置高度 100vh */
+    height: 100vh;
+}
+
+/* 头部区域的样式 */
+#header {
+    display: flex;
+    text-align: center;
+    background-color: @main-color;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    .left {
+        width: .45rem;
+        height: .45rem;
+        line-height: .45rem;
+        color: #fff;
+    }
+    .center {
+        flex: 1;
+        margin: 0;
+        line-height: .45rem;
+        color: #fff;
+        font-weight: normal;
+        input {
+            /* 去掉输入框默认底部margin */
+            margin-bottom: 0;
+            background-color: #fff;
+            /* 把输入框的文字颜色改成黑色 */
+            color: black;
+            /* 默认重复覆盖文字居左 */
+            text-align: left;
+        }
+    }
+    .right {
+        width: .45rem;
+        height: .45rem;
+        line-height: .45rem;
+        color: #fff;
+    }
+}
+
+/* 中间部分的主体样式 */
+#main {
+
+    position: relative;
+
+    height: 100%;
+}
+
+/* 底部区域的样式 */
+#footer {
+    background-color: @main-color;
+    height: .45rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    /* 已经没有默认宽度了  注意要加宽度 */
+    width: 100%;
+    a {
+        display: flex;
+        height: .45rem;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
